@@ -1,9 +1,101 @@
 body {
-	background: #0011ff;
+	background: #ff3838;
 	font-family: 'Montserrat', sans-serif;
+	color: white;
 }
 
-h1 {
-	font-weight: 800;
-	color: #ffffff;
+.navbar {
+	font-size: 120%;
+	vertical-align: middle;
+	font-weight: 400;
+	margin: 50px;
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	transition: font-size 0.25s;
+	transition-timing-function: ease;
+}
+
+a:hover {
+	font-weight: 600;
+	font-size: 105%;
+	color: #00FFD9;
+}
+
+.navbar li {
+	display: inline-block;
+}
+
+#intro {
+	list-style-type: : none;
+	font-size: 200%;
+	text-align: center;
+	margin-top: 100px;
+}
+
+#intro h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#intro li {
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+}
+
+.footer {
+	display: table;
+
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+
+	margin: 0px;
+	padding-bottom: 30px;
+}
+
+.footer li {
+	display: inline-block;
+}
+
+.right {
+	float: right;
+	padding-right: 50px;
+}
+
+.left {
+	float: left;
+	padding-left: 50px;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+}
+
+.link .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.link:hover .img-top {
+    display: inline;
+    top: -4px;
+    left: -4px;
+}
+
+.right .link:hover .img-top {
+    display: inline;
+    top: -2px;
+    left: -2px;
 }
